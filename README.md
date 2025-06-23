@@ -19,7 +19,7 @@ This project is a command-line based text generation tool that uses a pre-traine
 
 It supports interactive text generation with customizable paragraph count and provides an option to save the output to a timestamped file. The generated content can be used for creative writing, content ideation, educational experiments, or exploration of generative AI capabilities.
 
-This project was built during an AI/NLP internship to demonstrate hands-on implementation of modern transformer models and their practical application in natural language understanding and generation.
+
 
 
 ## Features
@@ -54,11 +54,11 @@ python text_generator.py
 
 Follow the prompts:
 
--Enter a topic or sentence.
+- Enter a topic or sentence.
 
--Specify the number of paragraphs to generate.
+- Specify the number of paragraphs to generate.
 
--Choose whether to save the output.
+- Choose whether to save the output.
 
 # Result
 
