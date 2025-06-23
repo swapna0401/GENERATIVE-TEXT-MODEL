@@ -1,6 +1,5 @@
 """
 GENERATIVE TEXT MODEL
-
 Description:
 This script uses a pre-trained GPT-2 language model from Hugging Face Transformers
 to generate paragraphs of AI-generated text based on an input prompt.
@@ -65,10 +64,14 @@ def generate_text(prompt, model, tokenizer, device, num_paragraphs=1, max_length
     Returns:
         List[str]: List of formatted generated paragraphs.
     """
-    input_ids = tokenizer.encode(prompt, return_tensors='pt').to(device)
+    # Encode input and get attention mask
+    inputs = tokenizer(prompt, return_tensors='pt')
+    input_ids = inputs['input_ids'].to(device)
+    attention_mask = inputs['attention_mask'].to(device)
 
     outputs = model.generate(
         input_ids=input_ids,
+        attention_mask=attention_mask,  # ✅ Added to avoid EOS/pad conflict
         max_length=max_length,
         do_sample=True,
         temperature=0.9,
