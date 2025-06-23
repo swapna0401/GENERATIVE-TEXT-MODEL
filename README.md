@@ -46,7 +46,7 @@ Ensure you have Python 3.7 or later installed.
 Install dependencies using pip:
 pip install -r requirements.txt
 
-# Running the Script
+## Running the Script
 
 To start the generation tool, run:
 
