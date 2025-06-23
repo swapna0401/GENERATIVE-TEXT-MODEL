@@ -59,3 +59,7 @@ Follow the prompts:
 -Specify the number of paragraphs to generate.
 
 -Choose whether to save the output.
+
+# Result
+
+![Image](https://github.com/user-attachments/assets/d15315d0-8879-4db2-b4a8-773b13dd4cb8)
